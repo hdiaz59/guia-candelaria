@@ -1,0 +1,9 @@
+.env
+.venv/
+.streamlit/secrets.toml
+dataset/
+descartadas/
+static/
+resultados/
+__pycache__/
+*.log

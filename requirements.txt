@@ -1,0 +1,9 @@
+streamlit
+azure-cognitiveservices-vision-customvision
+msrest
+python-dotenv
+pandas
+numpy
+scikit-learn
+matplotlib
+pillow
