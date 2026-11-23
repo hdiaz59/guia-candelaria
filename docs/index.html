@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guía de La Candelaria</title>
+<meta name="description" content="Reconoce sitios del centro histórico de Bogotá con una foto, sin internet.">
+<meta name="theme-color" content="#D81B60">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icono-192.png">
+<link rel="apple-touch-icon" href="img/icono-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Guía Candelaria">
+<style>
+:root { --acento:#D81B60; --texto:#1F2328; --suave:#5F6670; --fondo:#FFFFFF; --fondo-2:#F6F4F1; --linea:#E6E2DD;
+  --ok:#2E7D4F; --aviso:#F29E38; color-scheme:light;
+  --display:'Source Sans 3','Segoe UI','Helvetica Neue',Arial,sans-serif; --cuerpo:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --texto:#ECEDEF; --suave:#A7ADB5; --fondo:#15171A; --fondo-2:#1E2125; --linea:#2E3238; --acento:#F0558F; color-scheme:dark; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--fondo); color:var(--texto); font-family:var(--cuerpo); line-height:1.55; }
+.hero { min-height:300px; display:flex; align-items:flex-end; color:#fff;
+  background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.7)), url('img/hero.jpg') center 40%/cover; }
+.hero-in, main { max-width:880px; margin:0 auto; width:100%;
+  padding-left:max(16px, env(safe-area-inset-left)); padding-right:max(16px, env(safe-area-inset-right)); }
+.hero-in { padding-top:calc(env(safe-area-inset-top) + 2rem); padding-bottom:1.6rem; }
+.miga { font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; opacity:.9; }
+h1 { font-family:var(--display); font-weight:800; font-size:clamp(2rem,7vw,3rem); line-height:1.05; margin:.4rem 0 .7rem; text-wrap:balance; }
+.chips { display:flex; flex-wrap:wrap; gap:.4rem .9rem; font-size:.8rem; font-weight:600; text-transform:uppercase; letter-spacing:.03em; }
+.franja { display:flex; height:6px; } .franja i { flex:1; }
+.estado { display:flex; align-items:center; gap:.5rem; font-size:.85rem; margin:1rem 0 0; padding:.6rem .9rem; border-radius:10px; background:var(--fondo-2); }
+.estado b { width:.65rem; height:.65rem; border-radius:50%; background:var(--aviso); flex:none; }
+.estado.listo b { background:var(--ok); }
+.intro { color:var(--suave); margin:1rem 0; }
+.subir { display:flex; flex-wrap:wrap; gap:.7rem; margin:1.2rem 0; }
+.boton { font:600 1rem var(--cuerpo); padding:.8rem 1.3rem; border-radius:999px; border:2px solid var(--acento); cursor:pointer;
+  background:var(--acento); color:#fff; display:inline-flex; align-items:center; gap:.5rem; }
+.boton.sec { background:transparent; color:var(--acento); }
+.boton:focus-visible, select:focus-visible { outline:3px solid #2B59C3; outline-offset:2px; }
+input[type=file] { position:absolute; width:1px; height:1px; opacity:0; pointer-events:none; }
+.ajuste { display:flex; align-items:center; gap:.6rem; font-size:.85rem; color:var(--suave); flex-wrap:wrap; }
+.ajuste input { accent-color:var(--acento); width:10rem; }
+.resultado { display:grid; grid-template-columns:1fr 1.15fr; gap:1.4rem; margin:1.4rem 0 2rem; align-items:start; }
+.resultado img { width:100%; border-radius:12px; display:block; }
+.tarjeta { background:var(--fondo); border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,.1); border-top:6px solid var(--acento); padding:1.3rem 1.4rem; min-width:0; }
+.etq { font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; color:var(--suave); }
+.tarjeta h2 { font-family:var(--display); font-weight:800; font-size:1.9rem; line-height:1.1; margin:.25rem 0 .6rem; }
+.pildora { display:inline-block; background:var(--acento); color:#fff; border-radius:999px; padding:.2rem .75rem; font-size:.8rem; font-weight:600; }
+.pildora.gris { background:#8A9099; }
+.barra { height:8px; background:var(--linea); border-radius:999px; margin:.7rem 0 1rem; overflow:hidden; } .barra b { display:block; height:100%; background:var(--acento); }
+.dato { background:var(--fondo-2); border-left:4px solid var(--aviso); padding:.7rem .9rem; border-radius:6px; font-size:.92rem; margin:.8rem 0; }
+.probs { font-size:.8rem; color:var(--suave); margin-top:.8rem; }
+.probs div { display:grid; grid-template-columns:9rem 1fr 3rem; gap:.5rem; align-items:center; margin:.15rem 0; }
+.probs i { display:block; height:6px; border-radius:3px; background:var(--acento); opacity:.65; }
+.seccion { font-family:var(--display); font-weight:800; font-size:1.7rem; margin:2rem 0 .2rem; }
+.seccion:after { content:''; display:block; width:52px; height:4px; background:var(--acento); margin-top:.4rem; border-radius:2px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1.1rem; margin:1rem 0 2rem; }
+.card { border-radius:14px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,.08); background:var(--fondo); }
+.card .img { height:160px; background-size:cover; background-position:center; }
+.card .txt { padding:.9rem 1rem 1.1rem; } .card h3 { font-family:var(--display); font-size:1.15rem; margin:0 0 .3rem; } .card p { font-size:.82rem; color:var(--suave); margin:0; }
+footer { font-size:.72rem; color:var(--suave); border-top:1px solid var(--linea); padding:1.2rem 0 calc(env(safe-area-inset-bottom) + 2rem); }
+footer a { color:var(--suave); }
+.cargando { display:flex; align-items:center; gap:.6rem; color:var(--suave); margin:1rem 0; }
+.cargando:before { content:''; width:18px; height:18px; border:3px solid var(--linea); border-top-color:var(--acento); border-radius:50%; animation:g 1s linear infinite; }
+@keyframes g { to { transform:rotate(360deg); } }
+@media (max-width:640px) { .resultado { grid-template-columns:1fr; } .probs div { grid-template-columns:7rem 1fr 2.6rem; } }
+@media (prefers-reduced-motion: reduce) { .cargando:before { animation:none; } }
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-in">
+  <div class="miga">Bogotá / Centro histórico / Funciona sin internet</div>
+  <h1>Descubre La Candelaria con una foto</h1>
+  <div class="chips"><span>📍 Bogotá</span><span>🏛️ 6 sitios</span><span>📶 Sin conexión</span></div>
+</div></header>
+<div class="franja"><i style="background:#2E9B4E"></i><i style="background:#D7263D"></i><i style="background:#E86A92"></i><i style="background:#2B59C3"></i><i style="background:#5BC0EB"></i><i style="background:#F29E38"></i></div>
+
+<main>
+  <p class="estado" id="estado"><b></b><span id="estado-txt">Preparando la guía para usarla sin internet…</span></p>
+  <p class="intro">Toma una foto de un edificio del centro histórico y la guía te dirá qué es. El reconocimiento ocurre dentro de tu teléfono, así que funciona aunque no tengas señal.</p>
+
+  <div class="subir">
+    <label class="boton" for="camara">📷 Tomar foto</label>
+    <input id="camara" type="file" accept="image/*" capture="environment">
+    <label class="boton sec" for="galeria">🖼️ Elegir de la galería</label>
+    <input id="galeria" type="file" accept="image/*">
+  </div>
+  <div class="ajuste"><label for="umbral">Confianza mínima para responder</label>
+    <input id="umbral" type="range" min="0.3" max="0.95" step="0.05" value="0.6"><b id="umbral-v">60 %</b></div>
+
+  <div id="salida" aria-live="polite"></div>
+
+  <h2 class="seccion">Sitios del recorrido</h2>
+  <div class="grid" id="grid"></div>
+
+  <footer id="pie">Proyecto académico de visión por computador (Universidad de La Salle). No es un sitio oficial de turismo.
+    Modelo: Azure Custom Vision, dominio Landmarks compacto, ejecutado en el teléfono con ONNX Runtime Web.</footer>
+</main>
+
+<script src="vendor/ort.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

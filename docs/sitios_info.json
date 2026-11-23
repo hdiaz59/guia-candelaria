@@ -1,0 +1,57 @@
+{
+  "catedral_primada": {
+    "nombre": "Catedral Primada de Colombia",
+    "descripcion": "Es la catedral de Bogotá y ocupa el costado oriental de la Plaza de Bolívar, donde, según la tradición, se celebró la primera misa de la ciudad en 1538. El edificio actual, de estilo neoclásico, se construyó entre 1807 y 1823 con diseño de fray Domingo de Petrés.",
+    "dato_curioso": "En su interior reposan los restos de Gonzalo Jiménez de Quesada, fundador de Bogotá."
+  },
+  "capilla_sagrario": {
+    "nombre": "Capilla del Sagrario",
+    "descripcion": "Capilla barroca de la segunda mitad del siglo XVII, ubicada junto a la Catedral Primada en la Plaza de Bolívar. Su fachada de piedra con dos espadañas es una de las joyas coloniales del centro.",
+    "dato_curioso": "Se ve muy parecida a la Catedral porque comparten la misma piedra y el mismo costado de la plaza."
+  },
+  "capitolio": {
+    "nombre": "Capitolio Nacional",
+    "descripcion": "Sede del Congreso de Colombia, en el costado sur de la Plaza de Bolívar. Su construcción empezó en 1848 con diseño de Thomas Reed y terminó en 1926, después de casi 80 años de obras interrumpidas.",
+    "dato_curioso": "Su gran columnata de piedra mira hacia la plaza y es una de las fachadas más fotografiadas del país."
+  },
+  "plaza_bolivar": {
+    "nombre": "Plaza de Bolívar",
+    "descripcion": "Plaza principal de Bogotá desde la fundación de la ciudad, antes llamada Plaza Mayor. La rodean la Catedral Primada, el Capitolio Nacional, el Palacio Liévano y el Palacio de Justicia.",
+    "dato_curioso": "En el centro está la estatua de Simón Bolívar del escultor italiano Pietro Tenerani, instalada en 1846."
+  },
+  "casa_narino": {
+    "nombre": "Casa de Nariño",
+    "descripcion": "Residencia y lugar de trabajo del presidente de Colombia. Está en el sitio donde nació Antonio Nariño, prócer de la independencia y traductor de los Derechos del Hombre. El edificio actual se inauguró a comienzos del siglo XX y fue ampliado después.",
+    "dato_curioso": "El Batallón Guardia Presidencial realiza el cambio de guardia frente a la plaza de armas."
+  },
+  "palacio_lievano": {
+    "nombre": "Palacio Liévano",
+    "descripcion": "Sede de la Alcaldía Mayor de Bogotá, en el costado occidental de la Plaza de Bolívar. Es un edificio de estilo francés de comienzos del siglo XX, diseñado por el arquitecto Gaston Lelarge.",
+    "dato_curioso": "Su primer piso tiene arcadas que forman un pasaje cubierto a lo largo de la plaza."
+  },
+  "san_francisco": {
+    "nombre": "Iglesia de San Francisco",
+    "descripcion": "Considerada la iglesia más antigua que se conserva en Bogotá, construida en el siglo XVI en la esquina de la avenida Jiménez con carrera Séptima.",
+    "dato_curioso": "Su altar mayor, tallado en madera y cubierto de oro, es uno de los más valiosos del arte colonial colombiano."
+  },
+  "la_tercera": {
+    "nombre": "Iglesia de La Tercera",
+    "descripcion": "Templo de la Orden Tercera Franciscana en la carrera Séptima con calle 16, construido en el siglo XVIII y terminado hacia 1780.",
+    "dato_curioso": "A diferencia de otras iglesias coloniales, sus altares de madera tallada no están dorados."
+  },
+  "chorro_quevedo": {
+    "nombre": "Chorro de Quevedo",
+    "descripcion": "Pequeña plazoleta de La Candelaria donde, según la tradición, se fundó Bogotá en 1538. Hoy es un punto de encuentro de artistas, estudiantes y visitantes.",
+    "dato_curioso": "La capilla blanca de la plazoleta es una reconstrucción del siglo XX inspirada en la ermita original."
+  },
+  "museo_oro": {
+    "nombre": "Museo del Oro",
+    "descripcion": "Museo del Banco de la República frente al parque Santander. Tiene una de las colecciones de orfebrería prehispánica más grandes del mundo.",
+    "dato_curioso": "Allí se exhibe la balsa muisca, pieza asociada a la leyenda de El Dorado."
+  },
+  "otro_lugar": {
+    "nombre": "Lugar no reconocido",
+    "descripcion": "No reconozco este lugar como uno de los sitios del recorrido. Intenta tomar la foto de frente al edificio, con buena luz y sin personas que lo tapen.",
+    "dato_curioso": ""
+  }
+}

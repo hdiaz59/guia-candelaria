@@ -1,0 +1,37 @@
+{
+ "hero": {
+  "autor": "Dante O.P",
+  "licencia": "CC0",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Vista_de_la_plaza_de_bolivar.jpg"
+ },
+ "catedral_primada": {
+  "autor": "Cquiran",
+  "licencia": "CC BY 4.0",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Catedral_primada_Bogota_fachada_2025.jpg"
+ },
+ "capitolio": {
+  "autor": "Burkhard Mücke",
+  "licencia": "CC BY-SA 4.0",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Bogota_Stadt_27.jpg"
+ },
+ "casa_narino": {
+  "autor": "Fotografía oficial de la Presidencia de Colombia",
+  "licencia": "Public domain",
+  "fuente": "https://commons.wikimedia.org/wiki/File:20250811_Bandera_a_media_asta-Joel_Gonz%C3%A1lez_(1).jpg"
+ },
+ "palacio_lievano": {
+  "autor": "Burkhard Mücke",
+  "licencia": "CC BY-SA 4.0",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Bogota_Stadt_09.jpg"
+ },
+ "san_francisco": {
+  "autor": "Dvwoud09 at English Wikipedia",
+  "licencia": "CC BY-SA 3.0",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Iglesia_SFB.JPG"
+ },
+ "plaza_bolivar": {
+  "autor": "Dante O.P",
+  "licencia": "CC0",
+  "fuente": "https://commons.wikimedia.org/wiki/File:Vista_de_la_plaza_de_bolivar.jpg"
+ }
+}

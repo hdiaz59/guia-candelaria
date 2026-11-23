@@ -1,0 +1,13 @@
+{
+ "bgr": true,
+ "escala": 1,
+ "etiquetas": [
+  "capitolio",
+  "casa_narino",
+  "catedral_primada",
+  "otro_lugar",
+  "palacio_lievano",
+  "plaza_bolivar",
+  "san_francisco"
+ ]
+}
